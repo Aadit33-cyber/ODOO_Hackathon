@@ -27,7 +27,7 @@ function App() {
         }
       >
         <Route index element={<Dashboard />} />
-        {/* <Route path="vehicles" element={<Vehicles />} /> */}
+        <Route path="vehicles" element={<Vehicles />} />
         <Route path="drivers" element={<Drivers />} />
         <Route path="trips" element={<Trips />} />
         <Route path="maintenance" element={<Maintenance />} />
