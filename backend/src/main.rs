@@ -12,7 +12,7 @@ async fn main() -> anyhow::Result<()> {
     tracing_subscriber::fmt::init();
 
     let pool = db::connect().await?;
-    sqlx::migrate!("./migrations").run(&pool).await?;
+   // sqlx::migrate!("./migrations").run(&pool).await?;
 
     let app = routes::build(pool).layer(CorsLayer::permissive());
 
