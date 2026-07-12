@@ -10,11 +10,11 @@ export default function Dashboard() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    Promise.all([
-      apiRequest('/reports/dashboard'),
-      apiRequest('/trips'),
-      apiRequest('/maintenance'),
-    ])
+    // Promise.all([
+    //   apiRequest('/reports/dashboard'),
+    //   apiRequest('/trips'),
+    //   apiRequest('/maintenance'),
+    // ])
       .then(([k, t, m]) => {
         setKpis(k);
         setTrips(t.slice(0, 5));
