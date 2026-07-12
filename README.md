@@ -115,3 +115,28 @@ Business Logic
         │
         ▼
 PostgreSQL (sqlx)
+
+
+
+
+## Future Improvements
+
+- Real-time vehicle tracking
+- GPS integration
+- Trip route optimization
+- Predictive maintenance using ML
+- Email/SMS notifications
+- CSV/PDF report export
+- Docker deployment
+- CI/CD pipeline
+
+## Security
+
+- Passwords stored using secure hashing
+- JWT-based authentication
+- Role-based authorization
+- Parameterized SQL queries using sqlx
+- Environment-based configuration
+
+
+
