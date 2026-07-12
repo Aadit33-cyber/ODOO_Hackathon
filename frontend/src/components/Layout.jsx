@@ -4,10 +4,10 @@ import { clearToken } from '../api';
 const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', end: true },
   { to: '/vehicles', label: 'Vehicles' },
- 
+  { to: '/drivers', label: 'Drivers' },
   { to: '/trips', label: 'Trips' },
   { to: '/maintenance', label: 'Maintenance' },
-  {
+  { to: '/fuel-expense', label: 'Fuel & Expense' },
   { to: '/reports', label: 'Reports' },
 ];
 
@@ -40,7 +40,7 @@ export default function Layout() {
           ))}
         </ul>
         <div className="sidebar-footer">
-          <button className="btn " style={{ width: '100%' }} onClick={handleLogout}>
+          <button className="btn btn-secondary" style={{ width: '100%' }} onClick={handleLogout}>
             Log out
           </button>
         </div>
