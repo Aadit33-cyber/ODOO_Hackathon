@@ -22,9 +22,8 @@ export function getRole() {
 export function hasRole(...allowed) {
   return allowed.includes(getRole());
 }
-
-export async function login(email, password) {
-  const res = await fetch(`${BASE_URL}/auth/login`, {
+export async function login(email, password) { 
+  const res = await fetch(`${BASE_URL}/auth/login`, { 
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password }),
@@ -56,3 +55,6 @@ export async function apiRequest(path, options = {}) {
   }
   return res.json();
 }
+// Used by all application modules including:
+// Vehicles, Drivers, Trips, Maintenance,
+// Fuel Logs, Expenses, and Reports.
