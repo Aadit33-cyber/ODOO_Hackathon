@@ -39,7 +39,7 @@ export default function Login() {
               required
             />
           </div>
-          <div className="field">
+          {/* <div className="field">
             <label htmlFor="password">Password</label>
             <input
               id="password"
@@ -48,7 +48,7 @@ export default function Login() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-          </div>
+          </div> */}
           {error && <div className="error-text">{error}</div>}
           <button className="btn btn-primary" style={{ width: '100%' }} disabled={loading}>
             {loading ? 'Signing in...' : 'Sign in'}
