@@ -6,7 +6,7 @@ export default function Reports() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    apiRequest('jsync/reports/vehicle-roi') //path issue
+    apiRequest('/reports/vehicle-roi')
       .then(setCosts)
       .catch((err) => setError(err.message));
   }, []);
