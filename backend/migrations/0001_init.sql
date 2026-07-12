@@ -82,3 +82,12 @@ CREATE TABLE expenses (
     expense_date DATE NOT NULL,
     description TEXT
 );
+
+CREATE TABLE logistics (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    vehicle_id UUID NOT NULL REFERENCES vehicles(id),
+    expense_type TEXT NOT NULL,
+    amount DOUBLE PRECISION NOT NULL,
+    expense_date DATE NOT NULL,
+    description TEXT
+);
