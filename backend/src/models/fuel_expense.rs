@@ -18,5 +18,4 @@ pub struct Expense {
     pub expense_type: String,
     pub amount: f64,
     pub expense_date: NaiveDate,
-    pub description: Option<String>,
 }
