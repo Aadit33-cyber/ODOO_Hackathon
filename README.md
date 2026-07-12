@@ -103,3 +103,15 @@ See the problem statement for the full rule set (unique registration numbers,
 status transitions, cargo weight vs. capacity, license/status checks on
 dispatch, ROI formula, etc.). These are intentionally left as `TODO`s in the
 route handlers.
+
+
+Client (React + Vite)
+        │
+        ▼
+REST API (Axum)
+        │
+        ▼
+Business Logic
+        │
+        ▼
+PostgreSQL (sqlx)
